@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;ACHH,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC;AACD,EAAE,CAAC;EACD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;CACjB;;AACD,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,UAAU,CAAC;EACT,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,MAAM;EAEd,SAAS,EAAE,KAAK;CACjB;;AC3BD,AAAA,gBAAgB,CAAC;EACf,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,aAAa;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,QAAQ,EAAE,MAAM;CACjB;;ACTD,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,qBAAqB;EAClC,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "main.scss",
+        "base/_reset.scss",
+        "utils/_visually-hidden.scss",
+        "utils/_body.scss",
+        "utils/_vars.scss",
+        "../partials/header.html",
+        "../partials/hero.html",
+        "../partials/products.html",
+        "../partials/about.html",
+        "../partials/advantages.html",
+        "../partials/gallery.html",
+        "../partials/customer-reviews.html",
+        "../partials/contacts.html",
+        "../partials/footer.html"
+    ],
+    "names": [],
+    "file": "main.css"
+}
