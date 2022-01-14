@@ -104,9 +104,6 @@
   border-color: transparent;
   font-family: DM sans;
   cursor: pointer;
-  @media screen and (max-width: 479px) {
-    @include centeredflex;
-  }
 }
 
 .button-mobile-module:hover,

@@ -349,20 +349,6 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 479px) {
-  .button-mobile-module {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .button-mobile-module:hover,
 .button-mobile-module:focus {
   background-color: #ecebeb;
