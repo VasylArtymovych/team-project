@@ -6,16 +6,7 @@
         "base/_reset.scss",
         "utils/_visually-hidden.scss",
         "utils/_body.scss",
-        "utils/_vars.scss",
-        "../partials/header.html",
-        "../partials/hero.html",
-        "../partials/products.html",
-        "../partials/about.html",
-        "../partials/advantages.html",
-        "../partials/gallery.html",
-        "../partials/customer-reviews.html",
-        "../partials/contacts.html",
-        "../partials/footer.html"
+        "utils/_vars.scss"
     ],
     "names": [],
     "file": "main.css"
