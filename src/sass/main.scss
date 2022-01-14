@@ -4,12 +4,14 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import '../partials/header.html';
-@import '../partials/hero.html';
-@import '../partials/products.html';
-@import '../partials/about.html';
-@import '../partials/advantages.html';
-@import '../partials/gallery.html';
-@import '../partials/customer-reviews.html';
-@import '../partials/contacts.html.html';
-@import '../partials/footer.html.html';
+@import './base/reset';
+@import './utils/visually-hidden';
+@import './partials/header.html';
+@import './partials/hero.html';
+@import './partials/products.html';
+@import './partials/about.html';
+@import './partials/advantages.html';
+@import './partials/gallery.html';
+@import './partials/customer-reviews.html';
+@import './partials/contacts.html.html';
+@import './partials/footer.html.html';
