@@ -1,0 +1,57 @@
+.advantages {
+  background-color: $bg-color;
+  padding-bottom: 145px;
+
+  &__container {
+    background-color: $bg-color;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text_primary {
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: Titan One;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-title-color;
+  }
+  &__item {
+    &::before {
+      display: block;
+      content: '';
+      width: 50px;
+      height: 50px;
+      margin-bottom: 16px;
+    }
+  }
+  &__text_secondary {
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+    width: 230px;
+  }
+
+  &__icon1::before {
+    background-image: url(/images/advantages/advantages-one-mobile2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__icon2::before {
+    background-image: url(/images/advantages/advantages-two-mobile2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 38px;
+  }
+  &__icon3::before {
+    background-image: url(/images/advantages/advantages-three-mobile2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 38px;
+  }
+}
