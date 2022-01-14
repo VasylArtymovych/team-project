@@ -6,7 +6,16 @@
         "base/_reset.scss",
         "utils/_visually-hidden.scss",
         "utils/_body.scss",
-        "utils/_vars.scss"
+        "utils/_vars.scss",
+        "components/header/_header.scss",
+        "components/hero/_hero.scss",
+        "components/products/_products.scss",
+        "components/about/_about.scss",
+        "components/advantages/_advantages.scss",
+        "components/gallery/_gallery.scss",
+        "components/customer-reviews/_customer-reviews.scss",
+        "components/contacts/_contacts.scss",
+        "components/footer/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
