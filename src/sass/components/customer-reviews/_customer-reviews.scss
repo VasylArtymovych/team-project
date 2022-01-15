@@ -1,0 +1,27 @@
+.customer-reviews__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.customer-reviews__feedback {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  text-align: center;
+  color: $secondary-text-color;
+}
+
+.customer-reviews__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  text-align: center;
+  color: $secondary-text-color;
+}
