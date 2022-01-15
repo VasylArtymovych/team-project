@@ -261,7 +261,6 @@ body {
 }
 
 .header-list {
-  font-family: DM Sans;
   margin-top: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -336,7 +335,6 @@ body {
     background: #ffffff;
     color: #d41443;
     border-color: transparent;
-    font-family: DM sans;
     cursor: pointer;
   }
 }
@@ -474,7 +472,6 @@ body {
   background: #ffffff;
   color: #d41443;
   border-color: transparent;
-  font-family: DM sans;
   cursor: pointer;
 }
 
