@@ -39,7 +39,7 @@
   position: absolute;
   top: 0;
   right: 0px;
-  fill: #d41443;
+  fill: $secondary-title-color;
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     position: relative;
   }
@@ -95,9 +95,8 @@
   line-height: 21px;
   text-align: center;
   background: #ffffff;
-  color: #d41443;
+  color: $secondary-title-color;
   border-color: transparent;
-  font-family: DM sans;
   cursor: pointer;
 }
 
@@ -108,7 +107,7 @@
 
 .button-mobile-module::after {
   content: '';
-  border: solid #d41443;
+  border: solid $secondary-title-color;
   border-width: 0 2px 2px 0;
   margin-left: 15px;
   display: inline-block;
