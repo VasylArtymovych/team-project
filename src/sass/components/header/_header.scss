@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffb8ca;
+  background-color: $products-bg-one;
   @media screen and (max-width: 768px) {
     padding-top: 6px;
   }
@@ -9,14 +9,13 @@
 }
 
 .header-list {
-  font-family: DM Sans;
   margin-top: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
+  color: $primary-text-color;
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
 
@@ -31,7 +30,7 @@
 }
 
 .header-list--active {
-  color: #d41443;
+  color: $secondary-title-color;
 }
 
 .header-list > a {
@@ -76,7 +75,7 @@
     line-height: 21px;
     text-align: center;
     background: #ffffff;
-    color: #d41443;
+    color: $secondary-title-color;
     border-color: transparent;
     font-family: DM sans;
     cursor: pointer;
@@ -89,7 +88,7 @@
 
 .header-button::after {
   content: '';
-  border: solid #d41443;
+  border: solid $secondary-title-color;
   border-width: 0 2px 2px 0;
   margin-left: 15px;
   display: inline-block;
