@@ -581,6 +581,108 @@ body {
   -webkit-transform: rotate(-45deg);
 }
 
+.hero {
+  position: relative;
+  background-color: #ffb8ca;
+  padding: 193px 0 160px 0;
+}
+
+.hero__left-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  margin-bottom: 19px;
+  font-family: Titan One;
+  max-width: 218px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(30 / 26);
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.hero__title span {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.hero__btn-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__first-btn,
+.hero__second-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.hero__first-btn {
+  margin-right: 8px;
+  width: 63px;
+  height: 24px;
+  background-color: #d41443;
+  color: #ffffff;
+}
+
+.hero__second-btn {
+  width: 83px;
+  height: 24px;
+  background-color: #ffffff;
+  color: #d41443;
+}
+
+.hero__second-btn:hover,
+.hero__second-btn:focus {
+  background-color: #ecebeb;
+}
+
+.hero-list {
+  display: none;
+}
+
+.hero-card {
+  display: none;
+}
+
+.hero__img-voomen {
+  display: none;
+}
+
+.hero__ellipse-thumb {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 319px;
+}
+
+.hero__icecream-thumb {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+  width: 174px;
+}
+
 .products {
   padding: 30px 15px;
   padding-left: 15px;
@@ -612,7 +714,6 @@ body {
   font-size: 18px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
 }
@@ -638,7 +739,6 @@ body {
   font-size: 34px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
 }
@@ -735,7 +835,6 @@ body {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -757,7 +856,7 @@ body {
   height: 6px;
   position: absolute;
   content: '';
-  background-image: url();
+  background-image: url(/images/dots.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -925,7 +1024,6 @@ body {
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #ffffff;
 }
 
@@ -947,6 +1045,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
   border: none;
   display: block;
   margin: 0 auto;
