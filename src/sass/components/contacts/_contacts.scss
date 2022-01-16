@@ -1,31 +1,18 @@
-.contacts-section {
+.contacts {
   padding-top: 170px;
   margin: 0 auto;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-  }
 }
 
 .contacts-wrap {
-  width: 100%;
   background-color: #fff5f6;
   padding: 0;
   margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
   margin: 0 auto;
-  position: absolute;
+  width: 100%;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 768px;
     padding: 0 36px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1280px;
-    padding: 0 115px;
-    // background-image: url(../../../images/contacts/bg_contacts.png);
+  @media screen and (min-width: 1280px) {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,9 +21,7 @@
 }
 
 .contacts-container {
-  width: 100%;
   margin: 0 auto;
-  position: relative;
   transform: translateY(-84px);
 }
 
@@ -59,12 +44,12 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    flex-basis: calc(100% / 3 - 30px);
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
   @media screen and (min-width: 1200px) {
-    max-width: 320px;
     padding: 52px 43px 61px;
   }
 }
@@ -114,11 +99,9 @@
 }
 
 .contacts-item__title {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
   letter-spacing: 0.04em;
   color: #000000;
   @media screen and (min-width: 1200px) {
@@ -128,8 +111,6 @@
 }
 
 .representation__text {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.04em;
@@ -141,8 +122,6 @@
 }
 
 .representation-city__text {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -154,8 +133,6 @@
 }
 
 .representation-schedule__text {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
@@ -176,8 +153,6 @@
 
 .representation-contacts__link {
   text-decoration: none;
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
@@ -215,7 +190,7 @@
 }
 
 .cotacts__button {
-  width: 162px;
+  min-width: 162px;
   height: 44px;
   color: #d41443;
   font-family: DM Sans;
@@ -224,19 +199,23 @@
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  background-color: #ffffff;
+  background: $bg-color-two;
   border: #ffffff;
   border-radius: 22px;
   margin: 0 auto;
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  // background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  &::after {
+    content: '';
+    border: solid $secondary-title-color;
+    border-width: 0 2px 2px 0;
+    margin-left: 14px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
   &:hover,
   &:focus {
     background-color: #d41342;
-    color: #ffffff;
+    color: $secondary-title-color;
   }
-}
-
-.contacts-button__icon {
-  fill: #d41443;
 }
