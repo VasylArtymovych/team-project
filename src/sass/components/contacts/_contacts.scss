@@ -12,6 +12,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0 36px;
   }
+
 }
 
 .contacts-container__background {
@@ -21,6 +22,7 @@
     background-image: url(/images/contacts/bg_contacts.png);
     background-size: contain;
     background-position: left top;
+
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -196,7 +198,9 @@
   }
 }
 
+
 .modal-locations__button {
+
   min-width: 162px;
   height: 44px;
   color: $primary-text-color;
@@ -206,20 +210,26 @@
   font-size: 16px;
   line-height: 21px;
   text-align: center;
+
   background: #d41342;
   border: #d41342;
+
   border-radius: 22px;
   margin: 0 auto;
   &::after {
     content: '';
+
     border: solid $bg-color-two;
     border-width: 0 2px 2px 0;
     margin-left: 15px;
+
+
     display: inline-block;
     padding: 3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
+
   @media screen and (min-width: 768px) {
     width: 192px;
     padding-left: 30px;
@@ -230,12 +240,14 @@
     padding-left: 33px;
     padding-right: 33px;
   }
+
   &:hover,
   &:focus {
     background-color: #d41342;
-    color: #ffffff;
+    color: $secondary-title-color;
   }
 }
+
 
 .modal-franchise__button {
   min-width: 162px;
@@ -277,3 +289,4 @@
     color: $secondary-title-color;
   }
 }
+

@@ -56,7 +56,17 @@
         
     
         <div class="hero__ellipse-thumb">
-            <img src="./images/hero/ellipse-hero.png" alt="elipse">
+            <picture>
+
+                <source 
+                srcset="./images/hero/ellipse-desktop.png" 
+                media="(min-width: 1280px)">
+                <source 
+                srcset="./images/hero/ellipse-hero.png" 
+                media="(min-width: 320px)">
+                <img src="./images/hero/ellipse-desktop.png" alt="ellipse">
+            </picture>
+
         </div>
         
         <div class="hero__icecream-thumb">
