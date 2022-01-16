@@ -1,7 +1,8 @@
 .header {
   background-color: $products-bg-one;
-  // position: fixed;
-  // z-index: 50;
+  position: absolute;
+  z-index: 50;
+  background-color: transparent;
   @media screen and (max-width: 768px) {
     padding-top: 6px;
   }
@@ -48,7 +49,7 @@
   margin-bottom: 0px;
   padding: 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     margin: 0px;
   }
@@ -58,7 +59,7 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     display: none;
   }
 }
@@ -81,7 +82,7 @@
     border-color: transparent;
     cursor: pointer;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-left: 0px;
     }
   }
