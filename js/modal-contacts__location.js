@@ -1,16 +1,14 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-mobile-open]'),
-      closeModalBtn: document.querySelector('[data-mobile-close]'),
-      modal: document.querySelector('[data-mobile]'),
-    };
-  
-  
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle('contacts__modal--is-hidden_location');
-      
-    }
-  })();
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-location-open]'),
+    closeModalBtn: document.querySelector('[data-modal-location-close]'),
+    modal: document.querySelector('[data-modal-location]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();

@@ -1,16 +1,14 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-mobile-open]'),
-      closeModalBtn: document.querySelector('[data-mobile-close]'),
-      modal: document.querySelector('[data-mobile]'),
-    };
-  
-  
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle('contacts__modal--is-hidden_franchise');
-      
-    }
-  })();
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-franchise-open]'),
+    closeModalBtn: document.querySelector('[data-modal-franchise-close]'),
+    modal: document.querySelector('[data-modal-franchise]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();

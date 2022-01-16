@@ -2,44 +2,46 @@
 <section class="contacts" id="contacts">
     <h2 class="visually-hidden">contacts</h2>
     <div class="contacts-wrap">
-        <div class="container contacts-container">
-            <ul class="list representation__list">
-                <li class="representation__item">
-                    <div class="representation-cafe">
-                        <p class="representation__text">cafe</P>
-                    </div>
-                    <ul class="list contacts__list">
-                        <li class="contacts__item">
-                            <div class="representation__city">
-                                <p class="contacts-item__title">Chicago</P>
-                                <p class="representation-city__text">Fusce ut velit laoreet, tempus arcu molestie
-                                    vulputate</P>
-                            </div>
-                        </li>
-                        <li class="contacts__item">
-                            <ul class="list schedule__list">
-                                <li class="chedule__item">
-                                    <p class="contacts-item__title">Monday - Friday</P>
-                                    <p class="representation-schedule__text">06:00 AM - 10:00 PM</P>
-                                </li>
-                                <li class="chedule__item">
-                                    <p class="contacts-item__title">Saturday - Sunday</P>
-                                    <p class="representation-schedule__text">08:00 AM - 16:00 PM</P>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="contacts__item">
-                            <div class="representation__contacts">
-                                <ul class="list representation-contacts__list">
-                                    <li class="representation-contacts__item">
-                                        <a class="link representation-contacts__link" href="tel:+61(0)383766284">+61(0)
-                                            383 766 284</a>
+        <div class="contacts-container__background">
+            <div class="container contacts-container">
+                <ul class="list representation__list">
+                    <li class="representation__item">
+                        <div class="representation-cafe">
+                            <p class="representation__text">cafe</P>
+                        </div>
+                        <ul class="list contacts__list">
+                            <li class="contacts__item">
+                                <div class="representation__city">
+                                    <p class="contacts-item__title">Chicago</P>
+                                    <p class="representation-city__text">Fusce ut velit laoreet, tempus arcu molestie
+                                        vulputate</P>
+                                </div>
+                            </li>
+                            <li class="contacts__item">
+                                <ul class="list schedule__list">
+                                    <li class="chedule__item">
+                                        <p class="contacts-item__title">Monday - Friday</P>
+                                        <p class="representation-schedule__text">06:00 AM - 10:00 PM</P>
+
                                     </li>
-                                    <li class="representation-contacts__item">
-                                        <a class="link representation-contacts__link"
-                                            href="noreply@envato.com">noreply@envato.com</a>
+                                    <li class="chedule__item">
+                                        <p class="contacts-item__title">Saturday - Sunday</P>
+                                        <p class="representation-schedule__text">08:00 AM - 16:00 PM</P>
                                     </li>
                                 </ul>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="representation__contacts">
+                                    <ul class="list representation-contacts__list">
+                                        <li class="representation-contacts__item">
+                                            <a class="link representation-contacts__link" href="tel:+61(0)383766284">+61(0)
+                                                383 766 284</a>
+                                        </li>
+                                        <li class="representation-contacts__item">
+                                            <a class="link representation-contacts__link"
+                                                href="noreply@envato.com">noreply@envato.com</a>
+                                        </li>
+                                    </ul>
                             </div>
                         </li>
                     </ul>
@@ -124,16 +126,46 @@
                         </li>
                     </ul>
                 </li>
-            </ul>
-            <ul class="contact-button__list">
-                <li class="contact-button__item">
-                    <button data-modal-open type="button" class="cotacts__button modal-locations__button">Our Locations</button>
-                </li>
-                <li class="contact-button__item">
-                    <button data-modal-open type="button"
-                        class="cotacts__button modal-locations__franchise">Franchise</button>
-                </li>
-            </ul>
+
+                </ul>
+                <ul class="contact-button__list">
+                    <li class="contact-button__item">
+                        <button data-modal-location-open type="button" class="modal-locations__button">Our
+                            Locations</button>
+                    </li>
+                    <li class="contact-button__item">
+                        <button data-modal-franchise-open type="button"
+                            class="modal-franchise__button">Franchise</button>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </section>
+
+<!-- -------------------------------modal-location--------------------------- -->
+<div data-modal-location class="backdrop-location is-hidden">
+    <div class="modal-location">
+        <button data-modal-location-close type="button" class="modal-location-close__button">
+            <svg class="close-modal-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="modal-location__title">
+            Our Locations
+        </p>
+    </div>
+</div>
+
+<!-- -------------------------------modal-franchise--------------------------- -->
+<div data-modal-franchise class="backdrop-franchise is-hidden">
+    <!-- <div class="modal-franchise">
+        <button data-modal-franchise-close type="button" class="modal-franchise-close__button">
+        <svg class="close-modal-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+        </button>
+        <p class="modal-franchise__title">franchise</p>
+    </div> -->
+</div>
