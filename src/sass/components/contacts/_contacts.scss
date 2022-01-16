@@ -4,55 +4,68 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
 }
 
 .contacts-wrap {
+  width: 100%;
   background-color: #fff5f6;
   padding: 0;
   margin: 0;
   padding-left: 50px;
   padding-right: 50px;
   margin: 0 auto;
-
   position: absolute;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
     padding: 0 36px;
   }
-
+  @media screen and (min-width: 1200px) {
+    width: 1280px;
+    padding: 0 115px;
+    // background-image: url(../../../images/contacts/bg_contacts.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+  }
 }
 
 .contacts-container {
+  width: 100%;
   margin: 0 auto;
-
+  position: relative;
   transform: translateY(-84px);
 }
 
 .representation__list {
   margin-bottom: 54px;
-
   @media screen and (min-width: 768px) {
     display: flex;
   }
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
 }
 
 .representation__item {
-  max-width: 220px;
   padding: 43px 20px;
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin: 0 auto 20px;
+  @media screen and (max-width: 767px) {
+    width: 220px;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 30px;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 320px;
+    padding: 52px 43px 61px;
   }
 }
 
@@ -66,25 +79,34 @@
   &:not(:last-child) {
     border-bottom: 1px solid #e1e1e1;
   }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
 }
 
 .representation-cafe {
   width: 80px;
-  padding: 3px 25px;
   border-radius: 4px;
   text-transform: uppercase;
   background-color: #f0d1a5;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    width: 73px;
+    padding: 3px 16px;
+  }
 }
 
 .representation-foodtruck {
   width: 130px;
-  padding: 3px 25px;
   border-radius: 4px;
   text-transform: uppercase;
   background-color: #c2e297;
   text-align: center;
   margin-bottom: 25px;
+  @media screen and (min-width: 1200px) {
+    width: 138px;
+    padding: 3px 16px;
+  }
 }
 
 .representation__city {
@@ -99,6 +121,10 @@
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #000000;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 183%;
+  }
 }
 
 .representation__text {
@@ -108,6 +134,10 @@
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 183%;
+  }
 }
 
 .representation-city__text {
@@ -118,6 +148,9 @@
   line-height: 1.5;
   color: #907e82;
   margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .representation-schedule__text {
@@ -128,6 +161,9 @@
   line-height: 1.86;
   color: #ffa5ba;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .schedule__list {
@@ -146,10 +182,13 @@
   font-size: 12px;
   line-height: 18px;
   color: #907e82;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 .contact-button__list {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +199,6 @@
     display: flex;
     margin: 0 auto;
   }
-
 }
 
 .contact-button__item {
@@ -190,6 +228,8 @@
   border: #ffffff;
   border-radius: 22px;
   margin: 0 auto;
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  // background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   &:hover,
   &:focus {
     background-color: #d41342;
