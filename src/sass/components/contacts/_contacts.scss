@@ -12,11 +12,18 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0 36px;
   }
-  @media screen and (min-width: 1280px) {
+}
+
+.contacts-container__background {
+  @media screen and (min-width: 1200px) {
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url(/images/contacts/bg_contacts.png);
+    background-size: contain;
+    background-position: left top;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    z-index: 999;
+    z-index: 2;
   }
 }
 
@@ -77,7 +84,7 @@
   text-align: center;
   @media screen and (min-width: 1200px) {
     width: 73px;
-    padding: 3px 16px;
+    padding: 0 16px;
   }
 }
 
@@ -90,7 +97,7 @@
   margin-bottom: 25px;
   @media screen and (min-width: 1200px) {
     width: 138px;
-    padding: 3px 16px;
+    padding: 0 16px;
   }
 }
 
@@ -189,10 +196,51 @@
   }
 }
 
-.cotacts__button {
+.modal-locations__button {
   min-width: 162px;
   height: 44px;
-  color: #d41443;
+  color: $primary-text-color;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  background: #d41342;
+  border: #d41342;
+  border-radius: 22px;
+  margin: 0 auto;
+  &::after {
+    content: '';
+    border: solid $bg-color-two;
+    border-width: 0 2px 2px 0;
+    margin-left: 15px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  @media screen and (min-width: 768px) {
+    width: 192px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 198px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #d41342;
+    color: #ffffff;
+  }
+}
+
+.modal-franchise__button {
+  min-width: 162px;
+  height: 44px;
+  color: $secondary-title-color;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -200,22 +248,32 @@
   line-height: 21px;
   text-align: center;
   background: $bg-color-two;
-  border: #ffffff;
+  border: $bg-color-two;
   border-radius: 22px;
   margin: 0 auto;
   &::after {
     content: '';
     border: solid $secondary-title-color;
     border-width: 0 2px 2px 0;
-    margin-left: 14px;
+    margin-left: 13px;
     display: inline-block;
     padding: 3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
+  @media screen and (min-width: 768px) {
+    width: 174px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
   &:hover,
   &:focus {
-    background-color: #d41342;
+    background-color: #ecebeb;
     color: $secondary-title-color;
   }
 }
