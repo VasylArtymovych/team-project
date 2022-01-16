@@ -1,5 +1,7 @@
 .header {
-  background-color: #ffb8ca;
+  background-color: $products-bg-one;
+  // position: fixed;
+  // z-index: 50;
   @media screen and (max-width: 768px) {
     padding-top: 6px;
   }
@@ -9,18 +11,17 @@
 }
 
 .header-list {
-  font-family: DM Sans;
   margin-top: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
+  color: $bg-color-two;
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 21px;
     margin-top: 0;
@@ -31,7 +32,7 @@
 }
 
 .header-list--active {
-  color: #d41443;
+  color: $secondary-title-color;
 }
 
 .header-list > a {
@@ -47,7 +48,7 @@
   margin-bottom: 0px;
   padding: 0;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin: 0px;
   }
@@ -57,7 +58,7 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: none;
   }
 }
@@ -75,13 +76,12 @@
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-    background: #ffffff;
-    color: #d41443;
+    background: $bg-color-two;
+    color: $secondary-title-color;
     border-color: transparent;
-    font-family: DM sans;
     cursor: pointer;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       margin-left: 0px;
     }
   }
@@ -89,7 +89,7 @@
 
 .header-button::after {
   content: '';
-  border: solid #d41443;
+  border: solid $secondary-title-color;
   border-width: 0 2px 2px 0;
   margin-left: 15px;
   display: inline-block;
