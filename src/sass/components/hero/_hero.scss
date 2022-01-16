@@ -96,6 +96,7 @@
   height: 24px;
   background-color: #d41443;
   color: $primary-text-color;
+  transition: $transition-timing-function;
   @media screen and(min-width: 1280px) {
     margin-right: 15px;
     width: 104px;
@@ -112,6 +113,7 @@
   height: 24px;
   background-color: #ffffff;
   color: $secondary-title-color;
+  transition: $transition-timing-function;
   @media screen and(min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -230,12 +232,16 @@
   height: 18px;
   border-radius: 50%;
   background-color: $bg-color-two;
+  color: $secondary-title-color;
+  transition: $transition-timing-function;
   @media screen and(min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
 }
-.hero-card__icon {
+.hero-card__link:hover,
+.hero-card__link:focus {
+  background-color: #ecebeb;
   color: $secondary-title-color;
 }
 
