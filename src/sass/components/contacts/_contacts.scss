@@ -58,3 +58,164 @@
   display: block;
   margin-top: 25px;
 }
+
+.contacts__item {
+  margin-top: 25px;
+  &:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
+}
+
+.representation-cafe {
+  width: 80px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #f0d1a5;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    width: 73px;
+    padding: 3px 16px;
+  }
+}
+
+.representation-foodtruck {
+  width: 130px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #c2e297;
+  text-align: center;
+  margin-bottom: 25px;
+  @media screen and (min-width: 1200px) {
+    width: 138px;
+    padding: 3px 16px;
+  }
+}
+
+.representation__city {
+  margin-bottom: 25px;
+}
+
+.contacts-item__title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 183%;
+  }
+}
+
+.representation__text {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 183%;
+  }
+}
+
+.representation-city__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.representation-schedule__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.schedule__list {
+  margin-bottom: 25px;
+}
+
+.chedule__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.representation-contacts__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
+
+.contact-button__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.contact-button__item {
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+.cotacts__button {
+  min-width: 162px;
+  height: 44px;
+  color: #d41443;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  background: $bg-color-two;
+  border: #ffffff;
+  border-radius: 22px;
+  margin: 0 auto;
+  &::after {
+    content: '';
+    border: solid $secondary-title-color;
+    border-width: 0 2px 2px 0;
+    margin-left: 14px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  &:hover,
+  &:focus {
+    background-color: #d41342;
+    color: $secondary-title-color;
+  }
+}
