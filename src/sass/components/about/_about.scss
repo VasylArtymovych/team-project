@@ -205,6 +205,10 @@
   cursor: pointer;
 }
 
+.about__button:hover {
+  background: #ecebeb;
+}
+
 .about__button::after {
   content: '';
   border: solid #d41443;
