@@ -234,6 +234,7 @@
   background-color: $bg-color-two;
   color: $secondary-title-color;
   transition: $transition-timing-function;
+  transform: scale(1);
   @media screen and(min-width: 1280px) {
     width: 26px;
     height: 26px;
@@ -243,6 +244,7 @@
 .hero-card__link:focus {
   background-color: #ecebeb;
   color: $secondary-title-color;
+  transform: scale(1.5);
 }
 
 .hero__img-voomen-thumb {
@@ -265,7 +267,7 @@
   bottom: 75px;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 319px;
+  width: 319px;
   @media screen and(min-width: 768px) {
     bottom: 46px;
     left: 65%;
@@ -273,14 +275,9 @@
   }
   @media screen and(min-width: 1280px) {
     bottom: 76px;
-    left: 65%;
+    left: 60%;
     width: 538px;
     height: 538px;
-  }
-}
-.hero__ellipse-thumb img {
-  @media screen and(min-width: 1280px) {
-    width: 100%;
   }
 }
 
@@ -295,6 +292,7 @@
     width: 143px;
   }
   @media screen and(min-width: 1280px) {
+    left: 60%;
     width: 236px;
   }
 }
