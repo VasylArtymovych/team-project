@@ -1,6 +1,7 @@
 .header {
   background-color: $products-bg-one;
   position: absolute;
+  width: 100%;
   z-index: 50;
   background-color: transparent;
   @media screen and (max-width: 768px) {

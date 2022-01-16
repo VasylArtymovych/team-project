@@ -28,8 +28,8 @@
 <!--MODALKA-->
 
 
-
-<div data-modal class="modalka is-hidden">
+<div data-modal class="backdrop is-hidden-modal">
+<div class="modalka">
     <div class="button-header__modal">
         <button  data-modal-close type="button" class="button-header__close">DONT <br> CLICK <br> HERE</button>
 
@@ -93,13 +93,14 @@
                 </div>
                 </form>
     </div>
+    </div>
 
 
         <div data-mobile class="button-modal button-modal--active is-hidden">
             <button  data-mobile-close class="button-close-mobile" type="button">
                 <svg class="close-mobile-icon"><use href="./images/sprite.svg#icon-close"></use></svg>
             </button>
-            <button data-modal-open class="button-mobile-module" type="button">Buy now</button>
+            <button data-modal-open  class="button-mobile-module" type="button">Buy now</button>
             <nav>
                 <ul class="header-content">
                     <li class="header-list header-list--active"><a href="">Home</a></li>
@@ -112,4 +113,5 @@
         </div>
     </div>
     </div>
+    
 </header>
