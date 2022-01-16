@@ -26,11 +26,11 @@
 <!--MODALKA-->
 
 
-<div data-modal class="modalka is-hidden">
+<div data-modal-header class="modalka header__modal--is-hidden">
     <div class="button-header__modal">
         <button  data-modal-close type="button" class="button-header__close">DONT <br> CLICK <br> HERE</button>
 
-                <form class="form-modal" name="signup_form" action="./index.html" autocomplete="off" novalidate>
+                <form data-modal class="form-modal " name="signup_form" action="./index.html" autocomplete="off" novalidate>
                     <h2 class="modal-text">Choise your favorite IceCream</h2>
 
                     <div class="modal">
@@ -42,7 +42,7 @@
 
                       <div class="modal">
                         <b class="modal-word">Icecream</b>
-                        <img src="/images/home-pic1.png" class="modal-photo" width="50px" alt="ggg">
+                        <img src="./images/home-pic1.jpg" class="modal-photo" width="50px" alt="ggg">
                         <label class="modal__label">
                             how much ice cream can you eat?
                             ...order immediately 
@@ -52,7 +52,7 @@
             
                       <div class="modal">
                         <b class="modal-word">Icecoffe</b>
-                        <img src="/images/home-pic2.png" class="modal-photo" width="50px" alt="ggg">
+                        <img src="./images/home-pic2.png" class="modal-photo" width="50px" alt="ggg">
                         <label class="modal__label">
                             how much ice cream can you drink?
                             ...order immediately 
@@ -62,7 +62,7 @@
 
                     <div class="modal">
                         <b class="modal-word">Milkshakes</b>
-                        <img src="/images/home-pic3.png" class="modal-photo" width="50px" alt="ggg">
+                        <img src="./images/home-pic3.png" class="modal-photo" width="50px" alt="ggg">
                         <label class="modal__label">
                             how much ice cream can you shake?
                             ...order immediately 
@@ -89,7 +89,7 @@
             <button  data-mobile-close class="button-close-mobile" type="button">
                 <svg class="close-mobile-icon"><use href="./images/sprite.svg#icon-close"></use></svg>
             </button>
-            <button class="button-mobile-module" type="button">Buy now</button>
+            <button data-modal-open class="button-mobile-module" type="button">Buy now</button>
             <nav>
                 <ul class="header-content">
                     <li class="header-list header-list--active"><a href="">Home</a></li>
