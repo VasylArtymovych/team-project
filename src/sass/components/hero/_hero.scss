@@ -200,6 +200,7 @@
 
 .hero-card__thumb {
   width: 124px;
+  animation: bounce 1000ms 2;
   @media screen and(min-width: 1280px) {
     position: absolute;
     left: -34px;
