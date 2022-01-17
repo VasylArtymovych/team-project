@@ -1,8 +1,8 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-mobile-open]'),
-      closeModalBtn: document.querySelector('[data-mobile-close]'),
-      modal: document.querySelector('[data-mobile]'),
+      openModalBtn: document.querySelector('[data-hero-open]'),
+      closeModalBtn: document.querySelector('[data-hero-close]'),
+      modal: document.querySelector('[data-hero]'),
     };
   
   
@@ -10,7 +10,7 @@
     refs.closeModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle('hero__modal--is-hidden_products');
+      refs.modal.classList.toggle('hero__modal--is-hidden');
       
     }
   })();
