@@ -36,7 +36,7 @@
             <div class="hero-card__wrap">
                 <p class="hero-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et</p>
-                <a href="" class="hero-card__link">
+                <a href="" class="hero-card__link" data-hero-open>
                     <svg class="hero-card__icon" width="9px" height="9px">
                         <use href="./images/sprite.svg#arrow-long"></use>
                     </svg>
@@ -81,4 +81,34 @@
             </picture>
         </div>
     </div>
+
+    <!-- modal-window -->
+    <div class="menu-backdrop hero__modal--is-hidden" data-hero>
+        <div class="hero__menu">
+            <button class="menu-close-btn" type="button" data-hero-close>
+                <svg class="hero__menu-icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form name="subscription" action="" class="hero-form">
+                <b class="hero-form__title animate__animated animate__flash">Subscription</b>
+                <div class="hero-form__group">
+                    <input id="user-emeil" type="email" name="email" placeholder=" " class="hero-form__input">
+                    <label for="user-emeil" class="hero-form__label">user email</label>
+                </div>
+        
+                <div class="hero-form__group">
+                    <input id="user-tell" type="tel" name="tell" placeholder=" " class="hero-form__input">
+                    <label for="user-tell" class="hero-form__label">user tell</label>
+                </div>
+        
+                <div class="hero-checkbox-wrap">
+                    <input id="checkbox" type="checkbox" name="newsletter" class="checkbox-input visually-hidden" >
+                    <label for="checkbox" class="checkbox-label">Get newsletter about our products!</label>
+                </div>
+                <button class="hero-form__btn" type="submit"><span></span>subscribe</button>
+            </form>
+        </div>
+    </div>
+
 </section>
