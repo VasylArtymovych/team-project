@@ -24,6 +24,10 @@
 .modal {
   text-align: center;
   margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
   @media screen and (min-width: 1280px) {
     margin-top: 25px;
   }
@@ -33,6 +37,10 @@
   position: relative;
   color: $secondary-title-color;
   font-size: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .modal-photo {
@@ -57,6 +65,11 @@
   @media screen and (max-width: 1280px) {
     width: 460px;
     height: 580px;
+}
+
+@media screen and (max-width: 768px) {
+  width: 350px;
+  height: 525px;
 }
 }
 
@@ -95,6 +108,10 @@
   font-size: 15px;
   line-height: 18px;
   color: $secondary-title-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 .modal__label {
@@ -104,6 +121,10 @@
   font-weight: 500;
   letter-spacing: 0.05em;
   color: $primary-text-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 .modal-amount {

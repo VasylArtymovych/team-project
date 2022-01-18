@@ -10,7 +10,7 @@
     refs.closeModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle('burger-is-hidden');
+      refs.modal.classList.toggle('is-hidden');
       
     }
   })();
