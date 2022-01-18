@@ -232,6 +232,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
+  border: none;
   background-color: $bg-color-two;
   color: $secondary-title-color;
   transition: $transition-timing-function;
@@ -300,7 +301,7 @@
 
 // hero-menu
 
-.menu-backdrop {
+.modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -316,7 +317,7 @@
   pointer-events: none;
 }
 
-.hero__menu {
+.hero__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -325,10 +326,14 @@
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0px 4px 16px #c7133e;
-  background-color: #ffb8ca;
+  background-color: #ffa5ba;
+  background-image: linear-gradient(to top, #d4799080, #ffa5ba85),
+    url(/images/about/about-milk-desktop.png), url(/images/about/about-cow-tablet2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.menu-close-btn {
+.modal-close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,11 +344,15 @@
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
+  transition: $transition-timing-function;
   background-color: #d41443;
 }
-.hero-form__btn:hover,
-.hero-form__btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: #c7133e;
+}
+
+.hero__modal-icon {
 }
 
 .hero-form {
@@ -358,6 +367,7 @@
   letter-spacing: 0.04em;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 2px 4px 16px #ffffff;
   color: $secondary-title-color;
 }
 
@@ -375,6 +385,7 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
+  transition: $transition-timing-function;
   color: $secondary-title-color;
 }
 
@@ -392,8 +403,9 @@
 .hero-form__input:focus {
   border-bottom: 2px solid #c7133e;
 }
-.hero-form__input:focus,
-.hero-form__input:not(:placeholder-shown) ~ .hero-form__label {
+
+.hero-form__input:focus + .hero-form__label,
+.hero-form__input:not(:placeholder-shown) + .hero-form__label {
   top: -20px;
   font-size: 12px;
   color: #a83650;
@@ -422,6 +434,7 @@
   height: 18px;
   border: 1px solid #d41443;
   border-radius: 20px;
+  transition: $transition-timing-function;
   background-color: #ffa5ba;
 }
 .checkbox-label::after {
@@ -432,6 +445,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50px;
+  transition: $transition-timing-function;
   background-color: #d41443;
 }
 
