@@ -1,8 +1,8 @@
 <!--Шапка сайта Герой-->
 
 <header class="header">
-    <div class="container">
-        <div style="justify-content: space-between;
+<div class="container">
+  <div style="justify-content: space-between;
         display: flex; align-items: center;">
     <a class="header-logo" href="./index.html"><img srcset="./images/logo/logo-desktop.png 1x, ./images/logo/logo-desktop2x.png 2x" src="./images/logo/logo-desktop.png" alt="logo icecream"></a>
     <div class="header-mobile">
@@ -15,22 +15,22 @@
             <li class="header-list"><a href="#contacts">Contact</a></li>
         </ul>
     </nav>
-</div>
+    </div>
         <div class="buttons">
-    <button  data-mobile-open type="button"  class="button-open-mobile">
+    <button  class="menu-toggle menu-toggle--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="open-mobile-icon"><use href="./images/sprite.svg#icon-Burger"></use></svg></button>
 
-        <button data-modal-open type="button" class="header-button">Buy now</button>
+    <button data-modal-open type="button" class="header-button">Buy now</button>
 
-    </div>
+  </div>
 </div>
 
 <!--MODALKA-->
 
 
-<div data-modal class="backdrop is-hidden-modal">
-<div class="modalka">
-    <div class="button-header__modal">
+  <div data-modal class="backdrop is-hidden-modal">
+   <div class="modalka">
+        <div class="button-header__modal">
         <button  data-modal-close type="button" class="button-header__close">DONT <br> CLICK <br> HERE</button>
 
                 <form class="form-modal" name="signup_form" action="./index.html" autocomplete="off" novalidate>
@@ -90,14 +90,15 @@
                     <div class="modal">
                         <button type="submit" class="modal_submit">LETS DO IT!</button>
                     </div>                        
-                </div>
+                
                 </form>
-    </div>
-    </div>
+        </div>
+   </div>
+  </div>
 
 
-        <div data-mobile class="button-modal button-modal--active is-hidden">
-            <button  data-mobile-close class="button-close-mobile" type="button">
+    <div data-mobile class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle menu-toggle--close js-close-menu" type="button">
                 <svg class="close-mobile-icon"><use href="./images/sprite.svg#icon-close"></use></svg>
             </button>
             <button data-modal-open  class="button-mobile-module" type="button">Buy now</button>
@@ -110,8 +111,8 @@
                     <li class="header-list"><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
-        </div>
     </div>
-    </div>
+        
+</div>
     
 </header>

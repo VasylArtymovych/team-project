@@ -1,4 +1,4 @@
-.button-open-mobile {
+.menu-toggle--open {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -18,7 +18,7 @@
   }
 }
 
-.button-close-mobile {
+.menu-toggle--close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -53,7 +53,7 @@
   right: 3px;
 }
 
-.button-modal {
+.menu-container {
   position: fixed;
   padding-left: 20px;
   padding-right: 20px;
@@ -69,19 +69,14 @@
   overflow: hidden;
   z-index: 51;
 
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     height: 100vh;
     right: 5%;
   }
 }
 
-.button-modal--active {
-  transform: translate(0);
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 .button-mobile-module {
