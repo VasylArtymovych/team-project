@@ -23,10 +23,7 @@
 
 .modal {
   text-align: center;
-  margin-top: 30px;
-  @media screen and (min-width: 768px) {
-    margin-top: 32px;
-  }
+  margin-top: 20px;
   @media screen and (min-width: 1280px) {
     margin-top: 40px;
   }
@@ -40,7 +37,7 @@
 
 .modal-photo {
   position: absolute;
-  left: 2%;
+  left: 75%;
 }
 
 .form-modal {
@@ -51,12 +48,16 @@
   width: 500px;
   height: 700px;
   margin: 0px;
-  padding: 15px;
+  padding: 0px;
   border-radius: 15px;
   background-color: $products-bg-one;
   background-image: url(/images/about/about-milk-desktop.png);
-
   box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12);
+  
+  @media screen and (max-width: 1280px) {
+    width: 460px;
+    height: 580px;
+}
 }
 
 .button-header__close {
@@ -91,7 +92,7 @@
   margin: 0px;
   margin-bottom: 30px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 18px;
   color: $secondary-title-color;
 }
@@ -99,28 +100,34 @@
 .modal__label {
   padding: 0px;
   margin: 0px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: $primary-text-color;
 }
 
 .modal-amount {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 12px;
   width: auto;
-  height: 25px;
-  padding-left: 10px;
+  height: 30px;
+  padding: 5px;
   border-radius: 10px;
   border: 1px dashed $secondary-title-color;
   outline: none;
 }
 
 .modal__input {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   font-size: 10px;
   width: auto;
   height: 30px;
   margin-top: 5px;
-  padding-left: 10px;
   border-radius: 10px;
   border: 1px solid $secondary-title-color;
   outline: none;
