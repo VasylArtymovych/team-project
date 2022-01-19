@@ -1,8 +1,11 @@
+
+
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-mobile-open]'),
-      closeModalBtn: document.querySelector('[data-mobile-close]'),
-      modal: document.querySelector('[data-mobile]'),
+      openModalBtn: document.querySelector('[about__data-modal-open]'),
+      closeModalBtn: document.querySelector('[about__data-modal-close]'),
+      modal: document.querySelector('[about__data-modal]'),
+
     };
   
   
@@ -11,6 +14,5 @@
   
     function toggleModal() {
       refs.modal.classList.toggle('about__modal--is-hidden');
-      
     }
   })();
