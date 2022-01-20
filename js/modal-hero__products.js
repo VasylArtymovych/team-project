@@ -13,4 +13,10 @@
       refs.modal.classList.toggle('hero__modal--is-hidden');
       
     }
+    
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+    
   })();
