@@ -244,8 +244,7 @@
 
 .about__modal-window {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  padding: 40px;
+  position: absolute;
   border-radius: 10px;
 
   @media screen and (max-width: 479px) {
@@ -253,6 +252,7 @@
     height: 100vh;
   }
   @media screen and (min-width: 480px) {
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
