@@ -15,11 +15,12 @@ const refs = {
     refs.modal.classList.toggle('is-hidden-fr');
   }
 })();
-// const refs = {
-//     openModalBtn: document.querySelector('[modal-open-about]'),
-//     closeModalBtn: document.querySelector('[modal-close-about]'),
-//     modal: document.querySelector('[modal-about]'),
-//     scrollBtn: document.querySelector('.scroll-up'),
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[modal-open-about1]'),
+//     closeModalBtn: document.querySelector('[modal-close-about1]'),
+//     modal: document.querySelector('[modal-about1]'),
+   
 //   };
 //   refs.openModalBtn.addEventListener('click', toggleModal);
 //   refs.closeModalBtn.addEventListener('click', toggleModal);
