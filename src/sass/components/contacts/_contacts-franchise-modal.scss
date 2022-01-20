@@ -6,9 +6,11 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  pointer-events: none;
 
+  & {
+    opacity: 0;
+    pointer-events: none;
+  }
   &.is-open {
     opacity: 1;
     pointer-events: auto;
