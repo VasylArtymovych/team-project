@@ -11,6 +11,6 @@
   
     function toggleModal() {
       refs.modal.classList.toggle('products__modal--is-hidden_brown');
-      
+      document.body.classList.toggle("modal-open")
     }
   })();
