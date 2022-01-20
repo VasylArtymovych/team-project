@@ -22,7 +22,6 @@
                                     <li class="chedule__item">
                                         <p class="contacts-item__title">Monday - Friday</P>
                                         <p class="representation-schedule__text">06:00 AM - 10:00 PM</P>
-
                                     </li>
                                     <li class="chedule__item">
                                         <p class="contacts-item__title">Saturday - Sunday</P>
@@ -126,7 +125,6 @@
                         </li>
                     </ul>
                 </li>
-
                 </ul>
                 <ul class="contact-button__list">
                     <li class="contact-button__item">
@@ -139,7 +137,6 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 
@@ -153,10 +150,66 @@
             </svg>
         </button>
         <p class="modal-location__title">
-            Our Locations
+            find tasty
         </p>
+        <div class="modal-location__social">
+            <ul class="location-social__list list">
+                <li class="social-footer__item">
+                    <a href="https://www.github.com/" class="social-footer__link link">
+                        <svg class="footer__icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-footer__item">
+                    <a href="https://www.telegram.com/" class="social-footer__link link">
+                        <svg class="footer__icon" width="20" height="15">
+                            <use href="./images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-footer__item">
+                    <a href="https://www.facebook.com/" class="social-footer__link link">
+                        <svg class="footer__icon" width="9" height="20">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <form action="#" class="modal-location-form">
+            <div class="modal-location-form__field">
+                <ul class="list location-list"> 
+                    <li class="location-item">
+                        <p class="select-box__title">select city</p>
+                        <select class="modal-location__select">
+                            <option>Chicago</option>
+                            <option>Los Angeles</option>
+                            <option>New York</option>
+                        </select>
+                    </li>
+                    <li class="location-item">
+                        <p class="select-box__title">select cafe</p>
+                        <select class="modal-location__select">
+                            <option>Cafe</option>
+                            <option>foodtruck</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="location-map">
+            <picture>
+                <source srcset="/images/map_chikago.jpg"
+                media="(min-width: 1200px)" />
+                <source srcset="/images/map_chikago_mob.jpg"
+                media="(min-width: 320px)" />
+                <img src="/images/map_chikago.jpg" alt="chikago_map" />
+            </picture>    
+        <div>
     </div>
 </div>x`
+
 
 <!-- -------------------------------modal-franchise--------------------------- -->
 <div  modal-fr class="fr-backdrop is-hidden">
@@ -178,6 +231,7 @@
         <button class="fr-modal__btn" modal-close-fr>Close</button>
     </div>
 </div>
+
 
 
 </section>
