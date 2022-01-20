@@ -35,3 +35,7 @@ img {
     width: 1080px;
   }
 }
+
+body.modal-open {
+  overflow: hidden;
+}
