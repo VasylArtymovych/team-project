@@ -11,7 +11,7 @@
   
     function toggleModal() {
       refs.modal.classList.toggle('hero__modal--is-hidden');
-      
+      document.body.classList.toggle("modal-open")
     }
     
     const scrollLockMethod = !isMenuOpen

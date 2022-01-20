@@ -5,12 +5,11 @@
       modal: document.querySelector('[data-mobile]'),
     };
   
-  
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
       refs.modal.classList.toggle('hero__modal--is-hidden_made');
-      
+      document.body.classList.toggle("modal-open")
     }
   })();
