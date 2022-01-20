@@ -52,10 +52,12 @@
 }
 
 .hero__title span {
+  display: block;
   font-size: 48px;
   line-height: calc(46 / 48);
   text-transform: uppercase;
   color: $secondary-title-color;
+  animation: rotateX 2s infinite alternate;
   @media screen and(min-width: 768px) {
     font-size: 34px;
     line-height: calc(31 / 34);
@@ -139,6 +141,7 @@
 }
 .hero-list__item {
   margin-bottom: -8px;
+  animation: scale 1s infinite alternate;
   @media screen and(min-width: 1280px) {
     margin-bottom: -15px;
   }
@@ -200,7 +203,7 @@
 
 .hero-card__thumb {
   width: 124px;
-  animation: bounce 1000ms 2;
+  animation: translateY 1.5s infinite alternate;
   @media screen and(min-width: 1280px) {
     position: absolute;
     left: -34px;
@@ -237,6 +240,7 @@
   color: $secondary-title-color;
   transition: $transition-timing-function;
   transform: scale(1);
+  cursor: pointer;
   @media screen and(min-width: 1280px) {
     width: 26px;
     height: 26px;
@@ -289,6 +293,7 @@
   left: 50%;
   transform: translateX(-65%);
   width: 174px;
+
   @media screen and(min-width: 768px) {
     left: 65%;
     width: 143px;
@@ -299,7 +304,7 @@
   }
 }
 
-// hero-menu
+// hero-modal
 
 .modal-backdrop {
   position: fixed;
@@ -474,4 +479,37 @@
 .hero-form__btn:hover,
 .hero-form__btn:focus {
   background-color: #c7133e;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: perspective(200px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(200px) rotateX(45deg);
+  }
+}
+
+@keyframes translateY {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateY(25px);
+  }
 }
